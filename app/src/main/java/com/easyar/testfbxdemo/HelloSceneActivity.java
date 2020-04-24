@@ -27,6 +27,9 @@ import java.util.concurrent.CompletableFuture;
 
 /**
  * 加载一个基本的模型
+ *
+ * fbx 格式的模型不可用, 加载错误
+ *
  */
 public class HelloSceneActivity extends AppCompatActivity {
 
@@ -39,7 +42,7 @@ public class HelloSceneActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.helloscene_layout);
 
         if (!checkIsSupportedDeviceOrFinish(this)) {
             return;
