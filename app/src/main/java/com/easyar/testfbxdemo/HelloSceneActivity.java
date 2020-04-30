@@ -1,6 +1,7 @@
 package com.easyar.testfbxdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.solver.widgets.Rectangle;
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -70,8 +71,7 @@ public class HelloSceneActivity extends AppCompatActivity {
                         });
 
 
-        arFragment.setOnTapArPlaneListener(
-                (HitResult hitResult, Plane plane, MotionEvent motionEvent) -> {
+        arFragment.setOnTapArPlaneListener((HitResult hitResult, Plane plane, MotionEvent motionEvent) -> {
                     if (andyRenderable == null) {
                         return;
                     }

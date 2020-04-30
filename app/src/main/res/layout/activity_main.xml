@@ -28,5 +28,16 @@
         android:layout_marginTop="20dp"
         />
 
+    <Button
+        android:id="@+id/notarcameraBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="无AR相机加载模型"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        />
+
 
 </LinearLayout>
